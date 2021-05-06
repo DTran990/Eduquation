@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+#mainhead{
+  background:url('../images/school.jpeg') no-repeat center center/cover;
+  position:relative;
+  height:100vh;
+}
+#navbar{
+  display:flex;
+  background: rgb(29, 53, 87);
+  width:100%;
+  height:70px;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar #head{
+  text-decoration: none;
+  margin-left:20px;
+}
+#navbar #head h1{
+  color:white;
+}
+#navbar ul{
+  display:flex;
+  justify-content: space-between;
+  list-style:none;
+}
+#navbar ul li{
+  margin:0px 20px;
+}
+#navbar ul li a{
+  color:white;
+  list-style: none;
+  text-decoration: none;
+}
+.reg:hover{
+  border-bottom:red 2px solid;
+}
+ #headtext{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height:100%;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+
+ }
+#headtext #p1, #headtext #p2{
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight:500;
+ }
+#headtext a{
+  text-decoration: none;
+  color:white;
+  margin-top:30px;
+}
+ #headtext h2{
+   margin:15px 0px;
+   font-size:50px;
+ }
+#mainhead::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6)
+}
+
+#triple{
+  display:flex;
+  height:400px;
+  color:white;
+  background:rgb(29, 53, 87);
+}
+.box{
+  width:33.33%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+  align-items: center;
+  line-height: 2;
+  font-family: 'Open Sans', sans-serif;
+}
+.triple-head{
+  font-size: 30px;
+}
+.triple-p{
+  padding:20px 0px;
+}
+footer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:rgb(7, 22, 43);
+  height:150px;
+  width:100%;
+}
+footer #social{
+  margin:20px;
+}
+footer #social a{
+  color:white;
+  margin:0 15px;
+}
+footer #social a:hover{
+  color:red;
+}
+
+#footercopy h3{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  font-size: 10px;
+}
+
+#pic-contact{
+  display:flex;
+  background:url('../images/teaching.jpeg') no-repeat center center/cover;
+  font-family: 'Open Sans', sans-serif;
+  height:400px;
+  justify-content: space-between;
+  color:white;
+}
+#pic-contact #pic-header{
+  align-self: flex-end;
+}
+#pic-contact #pic-header h2{
+  font-size: 60px;
+  font-weight: 100px;
+  padding-left:30px;
+  padding-bottom:18px;
+}
+#pic-contact #contact-box{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:rgb(29, 53, 87);
+  color:white;
+  opacity: 0.95;
+  height:90%;
+  max-width:30%;
+  border:black solid 2px;
+  border-radius: 10px;
+  margin-top:20px;
+  margin-right:20px;
+}
+#pic-contact::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:470.1px;
+  background:rgba(0,0,0,0.6)
+}
+#pic-contact *,header *, #about *, #contact-image *, #register-con *,#login-con *,footer *, #lessons *{
+  z-index:11;
+}
+#contact-p{
+  width:75%;
+  text-align: center;
+}
+#about{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background:white;
+  min-height:300px;
+  color:rgb(29, 53, 87);
+  font-family: 'Open Sans', sans-serif;
+}
+#about h3{
+  font-weight: 800;
+  font-size: 30px;
+  margin:25px 0px;
+}
+#about p{
+  font-weight: 600;
+  width:76%;
+  font-size:18px;
+  line-height: 2;
+  padding-bottom:15px;
+}
+#ratings{
+  min-height:550px;
+  background:rgb(29, 53, 87);
+}
+#mainreviewbox{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.review{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background:white;
+  color:rgb(29, 53, 87);
+  font-family: 'Open Sans', sans-serif;
+  width:80%;
+  margin:20px;
+  margin-bottom:15px;
+  padding:15px;
+  border-radius: 10px;
+  text-align: center;
+} 
+.review-name{
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+.review-img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+}
+#review-1{
+  margin-top:30px;
+}
+#review-2{
+  margin-bottom:30px;
+}
+#contact-image{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/contact.jpg') no-repeat center center/cover;
+  height:330px;
+  width:100%;
+}
+#contact-image::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:400px;
+  background:rgba(0,0,0,0.6)
+}
+#contact-image h2{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  font-size:50px;
+  font-weight: 30px;
+}
+#contact-body{
+  display:flex;
+  justify-content: space-between;
+  min-height:450px;
+  font-family: 'Open Sans', sans-serif;
+}
+#contact-body #form-body{
+  height:100%;
+  width:60%;
+  padding:30px 20px;
+}
+
+#submit{
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+}
+#submit:hover{
+  cursor:pointer;
+}
+#account-box{
+  align-self:center;
+  text-align: center;
+  height:100%;
+  width:40%;
+  font-family: 'Open Sans', sans-serif;
+  margin:20px 0px;
+  margin-right:50px;
+  background: rgb(29, 53, 87);
+  color:white;
+  padding:50px;
+  border-radius: 10px;
+  line-height: 2;
+}
+
+#account-box .btn{
+  font-size:20px;
+  padding-left:70px;
+  padding-right: 70px;
+}
+
+#account-box h3{
+  font-size:30px;
+}
+
+#account-box p{
+  padding:16px;
+}
+
+#contact-body #form-body h3{
+  color: rgb(29, 53, 87);
+  font-weight: 30px;
+  font-size: 35px;
+  padding-bottom:20px;
+}
+
+#contact-info{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  background:rgb(29, 53, 87);
+  width:100%;
+  min-height:300px;
+  line-height:2;
+}
+#register-con{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width:100%;
+  min-height:1000px;
+  color:rgb(29, 53, 87);
+  background:url('../images/regback.jpeg') no-repeat center center/cover;
+  line-height: 1.3;
+}
+#register-con #form-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:white;
+  font-family: 'Open Sans', sans-serif;
+  width: 500px;
+  height:65%;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+#register-con #form-wrap h2{
+  font-size:30px;
+  margin:25px;
+}
+#register-con #form-wrap p{
+  text-align: center;
+  margin-bottom:21px;
+  font-size: 15px;
+}
+#register-con #form-wrap #terms{
+  font-size: 14px;
+}
+#register-con #form-wrap .form-group{
+  margin:10px 0px;
+  font-size: 18px;
+}
+#register-con #form-wrap .form-group input{
+  width:80%;
+  height:35px;
+}
+#register-con #form-wrap .btn{
+  margin:25px;
+  font-size: 25px;
+  width:80%;
+}
+#register-con #form-wrap .btn:hover{
+  cursor: pointer;
+}
+#register-con #form-wrap a{
+  color:red;
+}
+#register-con:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:1070px;
+  background:rgba(0,0,0,0.6)
+}
+#form-body textarea{
+  padding-right:0;
+  width:86%;
+  min-height:40px;
+
+}
+#login-sentence{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  font-size:15px;
+}
+#login-sentence a{
+  color:red;
+}
+#login-con{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width:100%;
+  min-height:700px;
+  color:rgb(29, 53, 87);
+  background:url('../images/log.jpeg') no-repeat center center/cover;
+  line-height: 1.3;
+}
+#login-con:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  min-height:770px;
+  background:rgba(0,0,0,0.6)
+}
+#login-con #login-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:white;
+  font-family: 'Open Sans', sans-serif;
+  width: 500px;
+  min-height:55%;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+#login-con #login-wrap h2{
+  font-size:30px;
+  margin:15px;
+}
+#login-con #login-wrap p{
+  text-align: center;
+  margin-bottom:10px;
+  font-size: 18px;
+}
+#login-con #login-wrap .form-group{
+  margin:10px 0px;
+  font-size: 18px;
+}
+#login-con #login-wrap .form-group input{
+  width:360px;
+  height:35px;
+}
+#login-con #login-wrap .form-group #forget{
+  font-size:12px;
+  text-decoration: none;
+}
+#login-con #login-wrap .btn{
+  margin:25px;
+  font-size: 20px;
+  width:80%;
+}
+#login-con #login-wrap .btn:hover{
+  cursor: pointer;
+}
+#lessons:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  background:rgba(0,0,0,0.6)
+}
+#lessons{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color:rgb(29, 53, 87);
+  font-family: 'Open Sans', sans-serif;
+  width:100%;
+  min-height: 2400px;
+}
+#lessons h2{
+  padding:30px 0px;
+  font-size: 50px;
+  font-weight: 500;
+}
+@media(min-width:1004px){
+  .menu-wrap{
+    display:none;
+  }
+}
+@media(max-width:1004px){
+  #mainhead #side-menu, #abouthead #side-menu{
+    display:none;
+  }
+}
+
+@media(max-width:850px){
+  #pic-contact #contact-box h3{
+    font-size:20px;
+  }
+  #pic-contact #contact-box{
+    font-size:smaller;
+  }
+  #login-con #login-wrap .form-group input{
+    width:320px;
+  }
+}
+@media(min-height:950px){
+  #login-con{
+    min-height:2000px ;
+  }
+  #login-con:before{
+    height:2071px;
+  }
+}
+@media (min-height:1217px){
+  #register-con{
+    min-height:2000px;
+  }
+  #register-con:before{
+    height:2070px;
+  }
+}
